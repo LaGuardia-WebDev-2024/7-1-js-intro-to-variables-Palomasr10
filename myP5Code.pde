@@ -15,6 +15,16 @@ void draw(){
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
+  var eyeSize;
+  
+  eyeSize = random(10,100)
+  
+  var toothLength;
+  
+  toothLength = 30;
+  
+  fill(174,153,136)
+  
   ellipse(150, 70, 60, 120);  // left ear
   ellipse(240, 70, 60, 120);  // right ear
 
@@ -23,13 +33,19 @@ void draw(){
   fill(0, 0, 0);
   ellipse(170, 150, eyeSize, eyeSize);  // left eye
   ellipse(230, 150, eyeSize, eyeSize);  // right eye
+  
+  fill(250,250,250)
+  ellipse(172,147,10,10)
+  ellipse(228,147,10,10)
 
   line(150, 200, 250, 200);   // mouth
 
-  noFill();
-  rect(185, 200, 15, 10); // left tooth
-  rect(200, 200, 15, 10); // right tooth
+  fill(250,250,250);
+  rect(185, 200, 15, toothLength); // left tooth
+  rect(200, 200, 15, toothLength); // right tooth
   
+  fill(252,225,247)
+  triangle(190,178,210,178,200,190)
 
 }
 
